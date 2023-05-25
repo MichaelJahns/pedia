@@ -1,0 +1,12 @@
+[versions]
+nav_version = "2.5.3"
+[libraries]
+nav-fragment = { group = "androidx.navigation", name = "navigation-fragment", version.ref = "nav_version" }
+nav-ui = { group = "androidx.navigation", name = "navigation-ui", version.ref = "nav_version" }
+nav-fragment-kotlin = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "nav_version" }
+nav-ui-kotlin = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "nav_version" }
+nav-dynamic-features = { group = "androidx.navigation", name = "navigation-dynamic-features-fragment", version.ref = "nav_version" }
+navigation-testing = { group = "androidx.navigation", name = "navigation-testing", version.ref = "nav_version" }
+[bundles]
+navigationx = ["nav-fragment", "nav-ui", "nav-fragment-kotlin", "nav-ui-kotlin", "nav-dynamic-features", "navigation-testing"]
+[plugins]
