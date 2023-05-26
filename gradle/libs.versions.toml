@@ -1,5 +1,9 @@
 [versions]
 nav_version = "2.5.3"
+fragment_test_version = "1.6.0-rc01"
+testx_version = "1.5.0"
+testx_runner_version = "1.5.2"
+
 [libraries]
 nav-fragment = { group = "androidx.navigation", name = "navigation-fragment", version.ref = "nav_version" }
 nav-ui = { group = "androidx.navigation", name = "navigation-ui", version.ref = "nav_version" }
@@ -7,6 +11,15 @@ nav-fragment-kotlin = { group = "androidx.navigation", name = "navigation-fragme
 nav-ui-kotlin = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "nav_version" }
 nav-dynamic-features = { group = "androidx.navigation", name = "navigation-dynamic-features-fragment", version.ref = "nav_version" }
 navigation-testing = { group = "androidx.navigation", name = "navigation-testing", version.ref = "nav_version" }
+
+fragment-testing = { group = "androidx.fragment", name = "fragment-testing", version.ref = "fragment_test_version" }
+fragment-ktx = { group = "androidx.fragment", name = "fragment-ktx", version.ref = "fragment_test_version" }
+test-core = { group = "androidx.test", name = "core", version.ref = "testx_version" }
+test-rules = { group = "androidx.test", name = "rules", version.ref = "testx_version" }
+test-runner = { group = "androidx.test", name = "runner", version.ref = "testx_runner_version" }
+
 [bundles]
 navigationx = ["nav-fragment", "nav-ui", "nav-fragment-kotlin", "nav-ui-kotlin", "nav-dynamic-features", "navigation-testing"]
+fragmentx = ["fragment-testing", "fragment-ktx", "test-core", "test-rules", "test-runner"]
+
 [plugins]
