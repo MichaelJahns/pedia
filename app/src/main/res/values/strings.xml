@@ -7,4 +7,6 @@
     <string name="navigate">navigate!</string>
     <string name="hello_recycler_fragment">RECYCLER</string>
     <string name="hello_landing_fragment">LANDING</string>
+    <string name="item_title_placeholder">Item Title</string>
+    <string name="label_item">Item</string>
 </resources>

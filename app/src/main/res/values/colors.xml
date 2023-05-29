@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="teal" hex="177e89" r="23" g="126" b="137" > #177e89</color>
+    <color name="green" hex="084c61" r="8" g="76" b="97">#084c61</color>
+    <color name="poppy" hex="db3a34" r="219" g="58" b="52">#ffc857</color>
+    <color name="sunglow" hex="ffc857" r="255" g="200" b="87">#db3a34</color>
+    <color name="jet" hex="323031" r="50" g="48" b="49">#323031</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>

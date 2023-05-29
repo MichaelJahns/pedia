@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.fragment.findNavController
 
+
 class RecyclerFragment : Fragment() {
     private lateinit var navButton : Button
     override fun onCreateView(
@@ -20,6 +21,14 @@ class RecyclerFragment : Fragment() {
         navButton.setOnClickListener{
             navigateToLanding()
         }
+        // Call off of main thread
+        val text = resources.openRawResource(R.raw.example).bufferedReader().use{
+            it.readText()
+        }
+        // Interesting question. Normally during the retrofit call JSON strings are transformed into a collection of Objects
+        // I did this approach in an attempt to do things 'in-order' but how does one make that transformation without a
+        // Retrofit implementation. Certainly I still need a data class.
+
         return view
 
     }
