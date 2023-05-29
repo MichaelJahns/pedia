@@ -12,7 +12,9 @@
         tools:layout="@layout/fragment_landing">
         <action
             android:id="@+id/toRecyclerFromLanding"
-            app:destination="@id/recyclerFragment" />
+            app:destination="@id/recyclerFragment"
+            app:enterAnim="@anim/offend_to_center"
+            app:exitAnim="@anim/slide_out_start" />
     </fragment>
 
 
@@ -23,6 +25,26 @@
         tools:layout="@layout/fragment_recycler">
         <action
             android:id="@+id/toLandingFromRecycler"
-            app:destination="@id/landingFragment" />
+            app:destination="@id/landingFragment"
+            app:enterAnim="@anim/offstart_to_center"
+            app:exitAnim="@anim/slide_out_end"/>
+
+        <action
+            android:id="@+id/toItemFromRecycler"
+            app:destination="@id/itemFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/itemFragment"
+        android:name="com.example.pedia.ItemFragment"
+        android:label="@string/label_item"
+        tools:layout="@layout/fragment_item">
+        <action
+            android:id="@+id/toRecyclerFromItem"
+            app:destination="@id/recyclerFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
     </fragment>
 </navigation>
