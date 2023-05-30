@@ -4,7 +4,7 @@ fragment_test_version = "1.6.0-rc01"
 testx_version = "1.5.0"
 testx_runner_version = "1.5.2"
 espresso_version = "3.4.0"
-
+gson_version = "2.10.1"
 [libraries]
 nav-fragment = { group = "androidx.navigation", name = "navigation-fragment", version.ref = "nav_version" }
 nav-ui = { group = "androidx.navigation", name = "navigation-ui", version.ref = "nav_version" }
@@ -19,7 +19,10 @@ test-core = { group = "androidx.test", name = "core", version.ref = "testx_versi
 test-rules = { group = "androidx.test", name = "rules", version.ref = "testx_version" }
 test-runner = { group = "androidx.test", name = "runner", version.ref = "testx_runner_version" }
 
-espresso-core = { group = "androidx.test.espresso", name="espresso-core", version.ref="espresso_version"}
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso_version" }
+
+gson-core = { group = "com.google.code.gson", name = "gson", version.ref = "gson_version" }
+
 [bundles]
 navigationx = ["nav-fragment", "nav-ui", "nav-fragment-kotlin", "nav-ui-kotlin", "nav-dynamic-features", "navigation-testing"]
 fragmentx = ["fragment-testing", "fragment-ktx", "test-core", "test-rules", "test-runner"]

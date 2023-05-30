@@ -1,12 +1,23 @@
 <resources>
+    <!--  App Strings  -->
     <string name="app_name">Pedia</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="label_landing">Welcome to Pedia</string>
-    <string name="label_recycler">recycler</string>
-    <string name="navigate">navigate!</string>
-    <string name="hello_recycler_fragment">RECYCLER</string>
+    <string name="acceptance">Accept</string>
+    <string name="denial">Deny</string>
+    <!--  Landing Strings  -->
     <string name="hello_landing_fragment">LANDING</string>
+    <string name="recycler_directions">to recycler!</string>
+    <string name="newspaper_directions">Hot off the press!</string>
+    <!--  Recycler Strings  -->
+    <string name="recycler">RECYCLER</string>
+    <string name="navigate">navigate!</string>
     <string name="item_title_placeholder">Item Title</string>
     <string name="label_item">Item</string>
+    <!--    Newspaper Strings-->
+    <string name="newspaper_header">You Suck!</string>
+    <string name="newspaper_sub_header">Experts Agree: Suck Radiates Off Of You. </string>
+    <string name="newspaper_body">But its not too late. With diligent practice even the most heinous among us can be made worthy of love. No one is beyond redemption. Have no enemies. Reclaim your soul. </string>
+    <string name="country_label">country</string>
+    <string name="capitol_label">capitol</string>
+    <string name="region_label">region</string>
+
 </resources>

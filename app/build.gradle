@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id("kotlin-parcelize")
 }
 
 android {
@@ -43,6 +44,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
     // VERSION CATALOG
+    implementation(libs.gson.core)
     implementation(libs.bundles.navigationx)
     debugImplementation(libs.bundles.fragmentx)
     androidTestImplementation(libs.espresso.core)
