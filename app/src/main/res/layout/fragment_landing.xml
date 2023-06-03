@@ -20,10 +20,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/recycler_directions"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <Button
+        android:id="@+id/variableFontCourier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/variable_font_directions"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/recyclerCourier" />
 
     <Button
         android:id="@+id/newspaperCourier"
@@ -33,7 +42,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/recyclerCourier" />
+        app:layout_constraintTop_toBottomOf="@id/variableFontCourier" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
