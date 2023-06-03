@@ -1,4 +1,4 @@
-package com.example.pedia.view
+package com.example.pedia.view.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

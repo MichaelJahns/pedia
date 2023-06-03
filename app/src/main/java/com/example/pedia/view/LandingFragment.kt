@@ -13,6 +13,7 @@ import com.example.pedia.R
 class LandingFragment : Fragment() {
     private lateinit var recyclerButton: Button
     private lateinit var newspaperButton: Button
+    private lateinit var variableFont: Button
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -27,6 +28,7 @@ class LandingFragment : Fragment() {
     private fun bindView(view: View) {
         recyclerButton = view.findViewById(R.id.recyclerCourier)
         newspaperButton = view.findViewById(R.id.newspaperCourier)
+        variableFont = view.findViewById(R.id.variableFontCourier)
     }
 
     private fun setListeners(){
@@ -35,6 +37,9 @@ class LandingFragment : Fragment() {
         }
         newspaperButton.setOnClickListener {
             findNavController().navigate(R.id.toNewspaperFromLanding)
+        }
+        variableFont.setOnClickListener {
+            findNavController().navigate(R.id.toVariableFontFromLanding)
         }
     }
 }

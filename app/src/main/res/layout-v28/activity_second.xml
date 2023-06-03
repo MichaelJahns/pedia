@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activities.SecondActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/varible_font_title"
+        android:textSize="32sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="24dp" />
+
+    <TextView
+        android:id="@+id/weight400"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cinzel_decorative"
+        android:gravity="center"
+        android:text="@string/varible_demo_string"
+        android:textFontWeight="400"
+        android:textSize="32sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="24dp" />
+
+    <TextView
+        android:id="@+id/weight700"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cinzel_decorative"
+        android:gravity="center"
+        android:text="@string/varible_demo_string"
+        android:textFontWeight="700"
+        android:textSize="32sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="24dp" />
+
+    <TextView
+        android:id="@+id/weight900"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cinzel_decorative"
+        android:gravity="center"
+        android:text="@string/varible_demo_string"
+        android:textFontWeight="900"
+        android:textSize="32sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="24dp" />
+
+</LinearLayout>
