@@ -49,6 +49,12 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
+    // Koin AndroidX Scope features
+    implementation "io.insert-koin:koin-androidx-scope:2.2.3"
+// Koin AndroidX ViewModel features
+    implementation "io.insert-koin:koin-androidx-viewmodel:2.2.3"
+// Koin AndroidX Fragment features
+    implementation "io.insert-koin:koin-androidx-fragment:2.2.3"
     // VERSION CATALOG
     implementation(libs.gson.core)
     implementation(libs.bundles.navigationx)

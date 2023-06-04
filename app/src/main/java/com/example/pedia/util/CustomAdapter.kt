@@ -1,10 +1,11 @@
-package com.example.pedia
+package com.example.pedia.util
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.pedia.R
 import com.example.pedia.datamodels.Country
 
 class CustomAdapter(
