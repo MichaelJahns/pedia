@@ -9,7 +9,7 @@ import android.widget.Button
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.pedia.R
-import com.example.pedia.CustomAdapter
+import com.example.pedia.util.CustomAdapter
 import com.example.pedia.datamodels.CountryList
 import com.google.gson.Gson
 
