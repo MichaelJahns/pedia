@@ -1,5 +1,6 @@
 package com.example.pedia.view
 
+import android.content.res.Resources
 import android.graphics.Typeface
 import android.os.Build
 import android.os.Bundle
@@ -10,13 +11,14 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import androidx.annotation.RequiresApi
+import androidx.core.content.res.ResourcesCompat
 import androidx.navigation.fragment.findNavController
 import com.example.pedia.R
 import org.w3c.dom.Text
 
 @RequiresApi(Build.VERSION_CODES.O)
 class VariableFontFragment : Fragment() {
-    private lateinit var typefaceBuilder: Typeface.Builder
+    private lateinit var typeface: Typeface
     //  UI
     private lateinit var textW400: TextView
     private lateinit var textW700: TextView
@@ -50,13 +52,11 @@ class VariableFontFragment : Fragment() {
     }
 
     private fun getTypefaceBuilder() {
-        typefaceBuilder =
-            Typeface.Builder(requireActivity().assets, "cinzel_decorative.ttf")
+        typeface = ResourcesCompat.getFont(requireContext(), R.font.cinzel_decorative)!!
     }
-
     private fun buildStrings() {
-        textW400.typeface = typefaceBuilder.build()
-        textW700.typeface = typefaceBuilder.build()
-        textW900.typeface = typefaceBuilder.build()
+        textW400.typeface = typeface
+        textW700.typeface = typeface
+        textW900.typeface = typeface
     }
 }
