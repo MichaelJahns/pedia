@@ -34,5 +34,10 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="cinzel_decorative">Cinzel Decorative</string>
+    <string name="nabla">Nabla</string>
+    <string name="foldit_demo">Foldit</string>
+    <string name="pedia">Pedia!</string>
+    <string name="nabla_demo">Nabla</string>
 
 </resources>

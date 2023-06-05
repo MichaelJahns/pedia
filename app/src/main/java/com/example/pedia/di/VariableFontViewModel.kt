@@ -5,7 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
 class VariableFontViewModel : ViewModel() {
-    private val _weight = MutableLiveData cx(0)
+    private val _weight = MutableLiveData(1)
     val weight: LiveData<Int> = _weight
 
     fun setWeight(weight: Int){
