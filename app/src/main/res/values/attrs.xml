@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="VariableFontTable">
+        <attr name="displayText" format="string"/>
+        <attr name="fontFamilyPath" format="string" />
+    </declare-styleable>
+    <declare-styleable name="VariableFontRow"/>
+</resources>

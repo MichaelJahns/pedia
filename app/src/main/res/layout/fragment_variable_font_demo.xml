@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,62 +8,26 @@
     tools:context=".view.VariableFontFragment">
 
     <TextView
+        android:id="@+id/cinzelTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="@string/varible_font_title"
+        android:text="@string/cinzel_decorative"
         android:textSize="32sp" />
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="24dp" />
-
-    <TextView
-        android:id="@+id/weight400"
+    <com.example.pedia.view.custom.VariableFontTable
+        android:id="@+id/cinzelDemo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/varible_demo_string"
-        android:textSize="32sp" />
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="24dp" />
-
-    <TextView
-        android:id="@+id/weight700"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/varible_demo_string"
-        android:textSize="32sp" />
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="24dp" />
-
-    <TextView
-        android:id="@+id/weight900"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/varible_demo_string"
-        android:textSize="32sp" />
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="24dp" />
-
-    <TextView
-        android:id="@+id/weightValue"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        app:displayText="@string/varible_demo_string"
+        app:fontFamilyPath="fonts/cinzel_decorative.ttf" />
 
     <SeekBar
         android:id="@+id/weightPicker"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:max="400"
+        android:min="1"
         android:progress="1" />
 
     <Button
