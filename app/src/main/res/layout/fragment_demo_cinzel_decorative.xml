@@ -5,17 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".view.VariableFontFragment">
+    tools:context=".view.fontdemos.CinzelDecorativeFragment">
 
     <TextView
         android:id="@+id/cinzelTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="@string/cinzel_decorative"
-        android:textSize="32sp" />
+        android:text="@string/cinzel_decorative_demo" />
 
-    <com.example.pedia.view.custom.VariableFontTable
+    <com.example.pedia.view.fontdemos.custom.VariableFontDemoTable
         android:id="@+id/cinzelDemo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -29,12 +28,5 @@
         android:max="400"
         android:min="1"
         android:progress="1" />
-
-    <Button
-        android:id="@+id/colorFontCourier"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/colorfont" />
 
 </LinearLayout>

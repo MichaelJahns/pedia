@@ -5,28 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".view.ColorFontFragment">
+    tools:context=".view.fontdemos.NablaFragment">
 
     <TextView
-        android:id="@+id/nablaTitle"
+        android:id="@+id/roboto_mono_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="@string/nabla"
-        android:textSize="32sp" />
+        android:text="@string/roboto_mono_demo"/>
 
-    <com.example.pedia.view.custom.VariableFontTable
-        android:id="@+id/nablaDemo"
+    <com.example.pedia.view.fontdemos.custom.VariableFontDemoTable
+        android:id="@+id/roboto_mono_demo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:displayText="@string/varible_demo_string"
-        app:fontFamilyPath="fonts/nabla.ttf" />
+        app:fontFamilyPath="fonts/roboto_mono.ttf" />
 
     <SeekBar
-        android:id="@+id/weightPicker"
+        android:id="@+id/weight_picker"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:max="400"
-        android:min="1"
         android:progress="1" />
 </LinearLayout>

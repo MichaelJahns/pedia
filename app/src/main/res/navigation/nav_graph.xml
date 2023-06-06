@@ -24,7 +24,7 @@
 
         <action
             android:id="@+id/toVariableFontFromLanding"
-            app:destination="@id/variableFontFragment" />
+            app:destination="@id/font_grid_fragment" />
     </fragment>
 
 
@@ -54,24 +54,35 @@
             app:popUpToInclusive="true" />
     </fragment>
     <fragment
-        android:id="@+id/variableFontFragment"
-        android:name="com.example.pedia.view.VariableFontFragment"
-        android:label="fragment_variable_font_demo"
-        tools:layout="@layout/fragment_variable_font_demo" >
+        android:id="@+id/font_grid_fragment"
+        android:name="com.example.pedia.view.fontdemos.VariableFontGridFragment"
+        android:label="FontGridFragment"
+        tools:layout="@layout/fragment_variable_font_grid">
         <action
-            android:id="@+id/toLandingFromVariableFont"
-            app:destination="@id/landingFragment" />
+            android:id="@+id/action_font_grid_fragment_to_roboto_mono_fragment"
+            app:destination="@id/roboto_mono_fragment" />
         <action
-            android:id="@+id/toColorFontFromVariableFont"
-            app:destination="@id/colorFontFragment" />
+            android:id="@+id/action_font_grid_fragment_to_cinzel_decorative_fragment"
+            app:destination="@id/cinzel_decorative_fragment" />
+        <action
+            android:id="@+id/action_font_grid_fragment_to_nabla_fragment"
+            app:destination="@id/nabla_fragment" />
     </fragment>
     <fragment
-        android:id="@+id/colorFontFragment"
-        android:name="com.example.pedia.view.ColorFontFragment"
-        android:label="fragment_color_font"
-        tools:layout="@layout/fragment_color_font" >
-        <action
-            android:id="@+id/toVariableFontFromColorFont"
-            app:destination="@id/variableFontFragment" />
+        android:id="@+id/cinzel_decorative_fragment"
+        android:name="com.example.pedia.view.fontdemos.CinzelDecorativeFragment"
+        android:label="CinzelDecorativeFragment"
+        tools:layout="@layout/fragment_demo_cinzel_decorative" >
     </fragment>
+    <fragment
+        android:id="@+id/nabla_fragment"
+        android:name="com.example.pedia.view.fontdemos.NablaFragment"
+        android:label="NablaFragment"
+        tools:layout="@layout/fragment_demo_nabla" >
+    </fragment>
+    <fragment
+        android:id="@+id/roboto_mono_fragment"
+        android:name="com.example.pedia.view.fontdemos.RobotoMonoFragment"
+        android:label="RobotoMonoFragment"
+        tools:layout="@layout/fragment_demo_roboto_mono"/>
 </navigation>
