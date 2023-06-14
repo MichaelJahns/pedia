@@ -1,13 +1,14 @@
 <resources>
-    <!--  App Strings  -->
+    <!--    App Strings  -->
+    <string name="pedia">Pedia!</string>
     <string name="app_name">Pedia</string>
     <string name="acceptance">Accept</string>
     <string name="denial">Deny</string>
-    <!--  Landing Strings  -->
+    <!--    Landing Strings  -->
     <string name="hello_landing_fragment">LANDING</string>
     <string name="recycler_directions">to recycler!</string>
     <string name="newspaper_directions">Hot off the press!</string>
-    <!--  Recycler Strings  -->
+    <!--    Recycler Strings  -->
     <string name="recycler">RECYCLER</string>
     <string name="navigate">navigate!</string>
     <string name="item_title_placeholder">Item Title</string>
@@ -19,25 +20,22 @@
     <string name="country_label">country</string>
     <string name="capitol_label">capitol</string>
     <string name="region_label">region</string>
-
-    <string name="variable_font_directions">variable fonts</string>
-    <string name="metal">metal</string>
+    <!--    Variable Font Strings -->
+    <string name="variable_font_directions">Try Variable Fonts</string>
     <string name="varible_font_title">Variable Font Demos</string>
-    <string name="colorfont">to color fonts</string>
     <string name="varible_demo_string">All is well that ends.</string>
-    <string name="title_activity_second">SecondActivity</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
-
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-    <string name="cinzel_decorative">Cinzel Decorative</string>
-    <string name="nabla">Nabla</string>
+    <!--    Font Strings -->
+    <string name="abc">ABC</string>
+    <string name="font_name">Sans Whatever</string>
+    <string name="cinzel_decorative_demo">Cinzel Decorative</string>
     <string name="foldit_demo">Foldit</string>
-    <string name="pedia">Pedia!</string>
     <string name="nabla_demo">Nabla</string>
+    <!--    Pangrams -->
+    <string name="sphinx_pangram">sphinx of black qqquartz, judge my vow. </string>
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="roboto_mono_demo">RobotoMono</string>
+    <string name="loud_proclamation">I remember every callback..</string>
+    <string name="callbacks">Callbacks</string>
 
 </resources>

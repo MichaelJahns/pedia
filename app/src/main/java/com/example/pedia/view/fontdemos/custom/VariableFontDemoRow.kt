@@ -1,4 +1,4 @@
-package com.example.pedia.view.custom
+package com.example.pedia.view.fontdemos.custom
 
 import android.content.Context
 import android.graphics.Typeface
@@ -8,10 +8,9 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.annotation.RequiresApi
 import com.example.pedia.R
-import kotlin.math.absoluteValue
 
 @RequiresApi(Build.VERSION_CODES.O)
-class VariableFontRow(
+class VariableFontDemoRow(
     context: Context,
     attrs: AttributeSet
 ) : LinearLayout(context, attrs) {

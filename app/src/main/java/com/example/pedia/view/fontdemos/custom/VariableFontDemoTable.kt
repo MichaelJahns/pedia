@@ -1,27 +1,29 @@
-package com.example.pedia.view.custom
+package com.example.pedia.view.fontdemos.custom
 
 import android.content.Context
+import android.graphics.Typeface
 import android.os.Build
 import android.util.AttributeSet
 import android.widget.LinearLayout
+import android.widget.TextView
 import androidx.annotation.RequiresApi
 import com.example.pedia.R
-import kotlin.math.absoluteValue
 
 @RequiresApi(Build.VERSION_CODES.O)
-class VariableFontTable(
+class VariableFontDemoTable(
     context: Context,
     attrs: AttributeSet
 ) : LinearLayout(context, attrs) {
     private var displayText: String
     private var fontFamilyString: String
-    private lateinit var minWeight: VariableFontRow
-    private lateinit var weightMinus200: VariableFontRow
-    private lateinit var currentWeight: VariableFontRow
-    private lateinit var weightPlus200: VariableFontRow
-    private lateinit var weightPlus400: VariableFontRow
-    private lateinit var weightPlus600: VariableFontRow
-    private lateinit var maxWeight: VariableFontRow
+    private lateinit var pangram: TextView
+    private lateinit var minWeight: VariableFontDemoRow
+    private lateinit var weightMinus200: VariableFontDemoRow
+    private lateinit var currentWeight: VariableFontDemoRow
+    private lateinit var weightPlus200: VariableFontDemoRow
+    private lateinit var weightPlus400: VariableFontDemoRow
+    private lateinit var weightPlus600: VariableFontDemoRow
+    private lateinit var maxWeight: VariableFontDemoRow
 
     init {
         inflate(context, R.layout.variable_font_table, this)
@@ -38,6 +40,7 @@ class VariableFontTable(
     }
 
     private fun bindView() {
+        pangram = findViewById(R.id.pangram)
         minWeight = findViewById(R.id.minWeight)
         weightMinus200 = findViewById(R.id.weightMinus200)
         currentWeight = findViewById(R.id.currentWeight)
@@ -58,6 +61,7 @@ class VariableFontTable(
     }
 
     private fun setFontFamily(fontFamilyPath: String) {
+        pangram.typeface = Typeface.createFromAsset(context.assets, fontFamilyPath)
         minWeight.updateFontFamily(fontFamilyPath)
         weightMinus200.updateFontFamily(fontFamilyPath)
         currentWeight.updateFontFamily(fontFamilyPath)

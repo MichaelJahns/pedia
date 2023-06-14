@@ -1,4 +1,4 @@
-package com.example.pedia.view
+package com.example.pedia.view.fontdemos
 
 import android.os.Build
 import android.os.Bundle
@@ -8,18 +8,18 @@ import android.view.ViewGroup
 import android.widget.SeekBar
 import android.widget.TextView
 import androidx.annotation.RequiresApi
-import androidx.fragment.app.Fragment
 import com.example.pedia.R
 import com.example.pedia.di.VariableFontViewModel
-import com.example.pedia.view.custom.VariableFontTable
+import com.example.pedia.view.fontdemos.custom.VariableFontFragment
+import com.example.pedia.view.fontdemos.custom.VariableFontDemoTable
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 @RequiresApi(Build.VERSION_CODES.O)
-class ColorFontFragment : Fragment() {
+class RobotoMonoFragment : VariableFontFragment() {
     val viewModel: VariableFontViewModel by viewModel()
     // UI
-    private lateinit var nablaTitle: TextView
-    private lateinit var nablaDemo: VariableFontTable
+    private lateinit var robotoMonoTitle: TextView
+    private lateinit var robotoMonoDemo: VariableFontDemoTable
     private lateinit var weightPicker: SeekBar
 
 
@@ -27,7 +27,7 @@ class ColorFontFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view =inflater.inflate(R.layout.fragment_color_font, container, false)
+        val view =inflater.inflate(R.layout.fragment_demo_roboto_mono, container, false)
         initView(view)
         initObservers()
         initListeners()
@@ -35,14 +35,14 @@ class ColorFontFragment : Fragment() {
     }
 
     private fun initView(view: View){
-        nablaTitle = view.findViewById(R.id.nablaTitle)
-        nablaDemo = view.findViewById(R.id.nablaDemo)
+        robotoMonoTitle = view.findViewById(R.id.nablaTitle)
+        robotoMonoDemo = view.findViewById(R.id.nablaDemo)
         weightPicker = view.findViewById(R.id.weightPicker)
     }
 
     private fun initObservers(){
         viewModel.weight.observe(viewLifecycleOwner) { weight ->
-            nablaDemo.updateWeight(weight)
+            robotoMonoDemo.updateWeight(weight)
         }
     }
     private fun initListeners() {

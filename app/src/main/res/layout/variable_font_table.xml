@@ -5,37 +5,45 @@
     android:layout_gravity="center"
     android:orientation="vertical">
 
-    <com.example.pedia.view.custom.VariableFontRow
+    <TextView
+        android:id="@+id/pangram"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sphinx_pangram"
+        android:textSize="24sp"
+        android:gravity="center" />
+
+    <com.example.pedia.view.fontdemos.custom.VariableFontDemoRow
         android:id="@+id/minWeight"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content" />
 
-    <com.example.pedia.view.custom.VariableFontRow
+    <com.example.pedia.view.fontdemos.custom.VariableFontDemoRow
         android:id="@+id/weightMinus200"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content" />
 
-    <com.example.pedia.view.custom.VariableFontRow
+    <com.example.pedia.view.fontdemos.custom.VariableFontDemoRow
         android:id="@+id/currentWeight"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content" />
 
-    <com.example.pedia.view.custom.VariableFontRow
+    <com.example.pedia.view.fontdemos.custom.VariableFontDemoRow
         android:id="@+id/weightPlus300"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <com.example.pedia.view.custom.VariableFontRow
+    <com.example.pedia.view.fontdemos.custom.VariableFontDemoRow
         android:id="@+id/weightPlus500"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content" />
 
-    <com.example.pedia.view.custom.VariableFontRow
+    <com.example.pedia.view.fontdemos.custom.VariableFontDemoRow
         android:id="@+id/weightPlus700"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <com.example.pedia.view.custom.VariableFontRow
+    <com.example.pedia.view.fontdemos.custom.VariableFontDemoRow
         android:id="@+id/maxWeight"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
