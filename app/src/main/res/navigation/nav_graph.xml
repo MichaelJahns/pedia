@@ -25,6 +25,9 @@
         <action
             android:id="@+id/toVariableFontFromLanding"
             app:destination="@id/font_grid_fragment" />
+        <action
+            android:id="@+id/toLoudFragmentFromLanding"
+            app:destination="@id/loudFragment" />
     </fragment>
 
 
@@ -85,4 +88,13 @@
         android:name="com.example.pedia.view.fontdemos.RobotoMonoFragment"
         android:label="RobotoMonoFragment"
         tools:layout="@layout/fragment_demo_roboto_mono"/>
+    <fragment
+        android:id="@+id/loudFragment"
+        android:name="com.example.pedia.view.loudview.LoudFragment"
+        android:label="LoudFragment"
+        tools:layout="@layout/fragment_loud">
+        <action
+            android:id="@+id/toLandingFromLoudFragment"
+            app:destination="@id/landingFragment" />
+    </fragment>
 </navigation>

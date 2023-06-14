@@ -35,5 +35,7 @@
 <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="roboto_mono_demo">RobotoMono</string>
+    <string name="loud_proclamation">I remember every callback..</string>
+    <string name="callbacks">Callbacks</string>
 
 </resources>
